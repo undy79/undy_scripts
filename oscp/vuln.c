@@ -7,11 +7,11 @@ int main(int argc, char *argv[])
  if (argc < 2)
  {
 	printf("syntax err\r\n");
-	printf("must supply at-least one argument\r\n")
+	printf("must supply at-least one argument\r\n");
 	return(1);
  }
 
- strcpy(buffer,arg[1]);
+ strcpy(buffer,argv[1]);
  return(0);
 
 
