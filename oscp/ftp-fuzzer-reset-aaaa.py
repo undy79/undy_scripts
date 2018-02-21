@@ -16,7 +16,7 @@ for command in commands:
         for string in buffer:
                 print "Fuzzing" + command + " with length:" +str(len(string))
                 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                connect=s.connect(('10.10.10.227',21)) # Target IP address
+                connect=s.connect(('10.0.0.227',21)) # Target IP address
                 s.recv(1024)
                 s.send('USER ftp\r\n') # login user
                 s.recv(1024)
